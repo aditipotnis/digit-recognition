@@ -15,3 +15,8 @@ python3 digitrecog.py
 
 Finally run:
 python3 guidigit_recog.py
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 5f0c61add0bee287a48db1e91bf5153fd76b2013
