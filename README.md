@@ -2,7 +2,7 @@
 
 digit recognition system built with a Convolutional Neural Network (CNN) using the Keras deep learning library and a graphical user interface (GUI) created using Tkinter.
 
-# Steps to install
+## Steps to install
 
 git clone https://github.com/aditipotnis/digit-recognition.git
 cd digit-recognition
