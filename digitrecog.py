@@ -3,6 +3,7 @@ from keras.datasets import mnist
 from keras.models import Sequential
 from keras.layers import Dense, Flatten, BatchNormalization, Dropout, Conv2D, MaxPooling2D
 from keras import backend as K
+from keras.optimizers import Adam
 
 #parameters
 batch_size = 128
@@ -41,7 +42,7 @@ model.add(Dense(256, activation='relu'))
 model.add(Dropout(0.5))
 model.add(Dense(num_classes, activation='softmax'))
 
-model.compile(loss=keras.losses.categorical_crossentropy,optimizer=keras.optimizers.Adadelta(),metrics=['accuracy'])
+model.compile(loss=keras.losses.categorical_crossentropy,optimizer=keras.optimizers.Adam(),metrics=['accuracy'])
 
 hist = model.fit(x_train, y_train,batch_size=batch_size,epochs=epochs,verbose=1,validation_data=(x_test, y_test))
 print("Model trained!")
