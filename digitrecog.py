@@ -8,7 +8,7 @@ from keras.optimizers import Adam
 #parameters
 batch_size = 128
 num_classes = 10
-epochs = 10
+epochs = 17
 
 #split data of training and testing sets
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
@@ -56,5 +56,3 @@ print('Test accuracy:', score[1])
 score = model.evaluate(x_test, y_test, verbose=0)
 print('Test loss:', score[0])
 print('Test accuracy:', score[1])
-
-

@@ -10,7 +10,7 @@ def predict_digit(img):
 	#resize image to 28x28 pixels
 	img = img.resize((28,28))
 
-    	#convert rgb to grayscale
+    #convert rgb to grayscale
 	img = img.convert('L')
 	img = ImageOps.invert(img)
 	img = np.array(img)
@@ -38,7 +38,7 @@ class App(tk.Tk):
         	# Creating elements
 		self.canvas = tk.Canvas(self, width=300, height=300, bg = "white", cursor="cross", bd=5, relief="sunken")
 		self.label = tk.Label(self, text="draw a digit", font=("Helvetica", 48), bg='lightblue')
-		self.classify_btn = tk.Button(self, text = "Recognized!", command = self.classify_handwriting) 
+		self.classify_btn = tk.Button(self, text = "Recognize", command = self.classify_handwriting) 
 		self.button_clear = tk.Button(self, text = "clear", command = self.clear_all, bg='red', fg='white', font=("Helvetica", 14))
         
 		# Grid structure
